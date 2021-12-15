@@ -46,14 +46,16 @@
         font-weight: 400
 
     :global(h1)
-        font-size: 2rem
+        font-size: $size-very-large
     :global(h2)
-        font-size: 1.5rem
+        font-size: $size-large
     :global(a)
         text-decoration: none
         color: inherit
     :global(a:visited)
         color: inherit
+    :global(p)
+        font-size: $size-default
 
     main
         display: grid
@@ -61,7 +63,7 @@
         padding: $size-very-large
 
     header
-        padding: 2em 5em
+        padding: $size-very-large $size-very-large * 2.5
         background-color: $color-bg
         display: grid
         place-items: center
